@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:700');
+
+.jumbotron {
+  background-color: #20315A;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+  padding: 0px
+}
+
+.main-card {
+  border: 1px #2c3e50 solid;
+  margin-bottom: 25px;
+}
+
+.card-header {
+  color: white;
+  background: #2c3e50;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+form {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+input, select {
+  height: 45px!important;
+  border: 2px solid #dce4ec;
+  outline: none;
+}
+
+*:focus {
+  outline: none!important;
+}
+
+.form-control:active, .form-control:focus, input:focus {
+  border: 2px #2c3e50 solid;
+  outline-width: 0!important;
+  outline: none!important;
+}
+
+button:focus {
+  outline: 0!important
+}
+
+.btn-primary {
+  background: #95a5a6;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.btn-primary:hover {
+  background: #677273;
+}
+
+.footer {
+  border-top: 1px solid #ecf0f1;
+  color: #b4bcc2;
+  font-size: .7em;
+}
+
+.footer p {
+  padding-top: 20px;
+}
+
+.sub-card {
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+.number {
+  background: #2c3e50;
+  border-radius: 5px;
+  color: white;
+  padding: .1em .5em .2em;
+}

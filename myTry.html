@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NYT - Anne's try</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="myTry.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4 text-center"><strong><i class="far fa-newspaper"></i></strong> New York Times Search</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card main-card">
+            <div class="card-header">
+              <strong><i class="fas fa-list-alt"></i> Search Parmeters</strong>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="searchTerm">Search Term:</label>
+                  <input type="text" class="form-control" id="searchTerm">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Example select</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>5</option>
+                    <option>10</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="startYear">Start Year (Optional):</label>
+                  <input type="text" class="form-control" id="startYear">
+                </div>
+                <div class="form-group">
+                  <label for="endYear">End Year (Optional):</label>
+                  <input type="text" class="form-control" id="endYear">
+                </div>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-search" style="font-size: 0.8em;"></i> Search</button>
+                <button class="btn btn-primary"><i class="fas fa-trash-alt" style="font-size: 0.8em;"></i> Clear Results</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="container card main-card">
+            <div class="card-header">
+              <strong><i class="fas fa-table"></i> Top Articles</strong>
+            </div>
+            <div class="card-body results">
+
+              <div class="card">
+                <div class="card-body sub-card">
+                  <h3 class="card-title"><span class="number">1</span> Card title</h3>
+                  <h4 class="card-subtitle mb-2 text-muted">By Card subtitle</h4>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row footer">
+        <div class="col-sm-12">
+          <p class="text-center">
+            Made with lots and lots of <i class="fa fa-heart"></i>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Code to the JavaScript File -->
+    <script src="myTry.js"></script>
+
+  </body>
+</html>
