@@ -25,6 +25,13 @@ function generateResults(length, results) {
   $('#articles-search').empty()
   if (results.length < length) length = results.length;
 
+  createArticleCard(length, results)
+
+  let header = $("<div>").addClass('card-header').html('<strong><i class="fas fa-table"></i> Top Articles</strong>')
+  $('#articles-search').prepend(header)
+}
+
+function createArticleCard (length, results) {
   for (let i = 0; i < length; i++) {
     console.log(results[i].web_url)
     let titleH3 = $('<h3>').addClass('card-title').html(`<a href="${results[i].web_url}"><span class="number">${i+1}</span> ${results[i].headline.main}</a>`)
@@ -38,7 +45,4 @@ function generateResults(length, results) {
     cardBody.append(card)
     $('#articles-search').append(cardBody)
   }
-
-  let header = $("<div>").addClass('card-header').html('<strong><i class="fas fa-table"></i> Top Articles</strong>')
-  $('#articles-search').prepend(header)
 }
