@@ -23,6 +23,7 @@ function searchResults(search) {
 
 function generateResults(length, results) {
   $('#articles-search').empty()
+  if (results.length < length) length = results.length;
 
   for (let i = 0; i < length; i++) {
     console.log(results[i].web_url)
@@ -36,8 +37,8 @@ function generateResults(length, results) {
     card.append(subCard)
     cardBody.append(card)
     $('#articles-search').append(cardBody)
-
-
-
   }
+
+  let header = $("<div>").addClass('card-header').html('<strong><i class="fas fa-table"></i> Top Articles</strong>')
+  $('#articles-search').prepend(header)
 }

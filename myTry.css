@@ -63,11 +63,11 @@ button:focus {
 
 a {
   text-decoration: none;
+  color: #2c3e50;
 }
 
 a:hover {
   text-decoration: none;
-  color: #404B52;
 }
 
 .footer {
