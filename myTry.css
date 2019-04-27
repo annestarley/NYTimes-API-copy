@@ -61,6 +61,15 @@ button:focus {
   background: #677273;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #404B52;
+}
+
 .footer {
   border-top: 1px solid #ecf0f1;
   color: #b4bcc2;

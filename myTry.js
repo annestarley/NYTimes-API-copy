@@ -22,11 +22,22 @@ function searchResults(search) {
 }
 
 function generateResults(length, results) {
+  $('#articles-search').empty()
+
   for (let i = 0; i < length; i++) {
-    console.log(results[i].headline.main)
-    console.log(results[i].source)
     console.log(results[i].web_url)
-    let cardBody = $("<div>").addClass('card-body results').append($('<div>').addClass('card').append($('<div>').addClass('card-body sub-card')))
-    
+    let titleH3 = $('<h3>').addClass('card-title').html(`<a href="${results[i].web_url}"><span class="number">${i+1}</span> ${results[i].headline.main}</a>`)
+    let subtitleH4 = $('<h4>').addClass('card-subtitle mb-2 text-muted').text(`By ${results[i].source}`)
+    let cardBody = $("<div>").addClass('card-body results')
+    let card = $('<div>').addClass('card')
+    let subCard = $('<div>').addClass('card-body sub-card')
+    subCard.append(titleH3)
+    subCard.append(subtitleH4)
+    card.append(subCard)
+    cardBody.append(card)
+    $('#articles-search').append(cardBody)
+
+
+
   }
 }
